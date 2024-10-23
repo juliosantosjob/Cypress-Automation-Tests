@@ -30,7 +30,7 @@ jobs:
         run: npm run lint
 
       - name: Cypress run 🧪
-        run: npm run cypress-run
+        run: npm run test:stg
 
       - name: Load test report history 📊
         uses: actions/checkout@v3
