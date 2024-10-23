@@ -16,6 +16,8 @@ jobs:
       STAGING: ${{ secrets.STAGING }}
       DEV: ${{ secrets.DEV }}
       PROD: ${{ secrets.PROD }}
+      SECRET_EMAIL: ${{ secrets.SECRET_EMAIL }}
+      SECRET_PASSWORD: ${{ secrets.SECRET_PASSWORD }}
 
     steps:
       - name: Checkout 🛎
