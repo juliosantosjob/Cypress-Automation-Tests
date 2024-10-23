@@ -1,0 +1,39 @@
+{
+  "name": "technical-challenge-easyjur",
+  "version": "1.0.0",
+  "main": "cypress.config.js",
+  "scripts": {
+    "test": "npx cypress run",
+    "open": "npx cypress open",
+    "lint": "npx eslint",
+    "allure:generate": "allure generate allure-results --clean",
+    "allure:history": "if exist allure-report/history move allure-report/history allure-results/history",
+    "allure:clear": "if exist allure-results rmdir /s /q allure-results && if exist allure-report rmdir /s /q allure-report",
+    "allure:test": "npm run allure:clear && npm run allure:generate && npm run test && npm run allure:history && npm run allure:open",
+    "allure:open": "npx allure serve allure-results",
+    "open:dev": "cross-env ENV=dev npx cypress open",
+    "open:stg": "cross-env ENV=stg npx cypress open",
+    "open:prd": "cross-env ENV=prd npx cypress open",
+    "test:dev": "cross-env ENV=dev npx cypress run",
+    "test:stg": "cross-env ENV=stg npx cypress run",
+    "test:prd": "cross-env ENV=prd npx cypress run"
+  },
+  "keywords": [],
+  "author": "Julio Santos",
+  "license": "ISC",
+  "description": "Project technical challenge easyjur",
+  "devDependencies": {
+    "@faker-js/faker": "^9.0.3",
+    "allure-commandline": "^2.29.0",
+    "allure-cypress": "^3.0.5",
+    "cross-env": "^7.0.3",
+    "cypress": "^13.15.0",
+    "eslint": "^9.8.0",
+    "eslint-plugin-cypress": "^3.4.0",
+    "eslint-plugin-json": "^4.0.0"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "rand-select": "^1.0.0"
+  }
+}

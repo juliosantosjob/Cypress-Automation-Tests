@@ -1,0 +1,28 @@
+{
+    "products": [
+        {
+            "name": "Blue Top",
+            "price": 500
+        },
+        {
+            "name": "Men Tshirt",
+            "price": 400
+        },
+        {
+            "name": "Sleeveless Dress",
+            "price": 1000
+        },
+        {
+            "name": "Summer White Top",
+            "price": 400
+        },
+        {
+            "name": "Stylish Dress",
+            "price": 1500
+        },
+        {
+            "name": "Winter Top",
+            "price": 600
+        }
+    ]
+}
