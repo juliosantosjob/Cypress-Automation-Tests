@@ -1,6 +1,6 @@
-# Desafio Técnico Easyjur
+# Teste com cypress
 
-Este projeto foi desenvolvido para atender ao desafio técnico proposto pela Easyjur. Por favor siga atentamente as instruções a baixo para conseguir executar os testes.
+Por favor siga atentamente as instruções a baixo para conseguir executar os testes.
 
 ## Tecnologias Utilizadas
 - Node.js
