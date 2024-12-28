@@ -9,7 +9,6 @@ module.exports = defineConfig({
         setupNodeEvents(on, config) {
             setupEnv(config);
             allureCypress(on);
-            
             return config;
         },
     },
