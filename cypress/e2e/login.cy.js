@@ -1,5 +1,3 @@
-/// <reference types="cypress" />
-
 import page from "../../pages-instance";
 
 describe("Autenticação de Usuário", () => {

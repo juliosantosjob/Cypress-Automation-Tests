@@ -1,5 +1,3 @@
-/// <reference types="cypress" />
-
 import page from "../../pages-instance";
 import creator from "../utils/dataGenerators";
 

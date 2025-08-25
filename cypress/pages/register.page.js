@@ -1,10 +1,10 @@
 import { ELM_REGISTER } from "../elements/register.element";
-import LoginPage from "./login.page";
+import page from "../../pages-instance";
 
 class RegisterPage {
 
     openRegisterPage() {
-        LoginPage.openLoginPage();
+        page.login.openLoginPage();
         cy.contains(ELM_REGISTER.fieldRegisterForm, ELM_REGISTER.textNewUserSignup)
             .should("be.visible");
     }
