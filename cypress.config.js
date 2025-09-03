@@ -2,13 +2,23 @@ require("dotenv").config();
 
 const { defineConfig } = require("cypress");
 const { setupEnv } = require("./cypress/utils/enviroments");
-const { allureCypress } = require("allure-cypress/reporter");
 
 module.exports = defineConfig({
+    reporter: "cypress-mochawesome-reporter",
+    reporterOptions: {
+        reportDir: "output/reports",
+        charts: true,
+        overwrite: false,
+        html: true,
+        json: true,
+        reportPageTitle: "Relatório de Testes",
+        embeddedScreenshots: true,
+        inlineAssets: true
+    },
     e2e: {
         setupNodeEvents(on, config) {
             setupEnv(config);
-            allureCypress(on);
+            require("cypress-mochawesome-reporter/plugin")(on);
             return config;
         },
     },

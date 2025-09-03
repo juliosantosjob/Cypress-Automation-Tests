@@ -8,7 +8,7 @@ describe("Autenticação de Usuário", () => {
 
     afterEach(() => cy.screenshot({ overwrite: true }));
 
-    it("Login com credenciais validas", () => {        
+    it("Login com credenciais validas", () => {
         page.login.openLoginPage();
         page.login.fillCredents(SECRET_EMAIL, SECRET_PASSWORD);
         page.login.submit();

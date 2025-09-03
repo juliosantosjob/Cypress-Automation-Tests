@@ -54,10 +54,12 @@ Assim os testes serão executados corretamente.
 
 ## Reporte de Teste
 
-Utilizei o Allure Report para gerar um relatório dos testes executados. Para gerar o relatório basta rodar o comando abaixo:
+Utilizei o **Mochawesome Report** para gerar relatórios dos testes executados.  
+Após rodar os testes, basta executar os comandos abaixo para gerar o relatório em HTML:
 
-    ```bash
-    npm run allure:test:stg
-    ```
+```bash
+npm run report:merge
+npm run report:generate
+```
 
 Desta maneira os testes serão executados e o relatório aberto apos a execução.

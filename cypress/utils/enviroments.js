@@ -22,7 +22,7 @@ module.exports = {
 
     /**
      * Define a URL base da aplicação de acordo com o ambiente definido.
-     * 
+     *
      * @param {object} config - Configuração do Cypress.
      * @returns {string} - URL base por ambiente.
      */

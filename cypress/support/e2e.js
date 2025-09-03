@@ -1,6 +1,6 @@
 // Import commands.js using ES2015 syntax:
+import "cypress-mochawesome-reporter/register";
 import "./commands";
-import "allure-cypress";
 
 // Help hiding requests in command logs
 const origLog = Cypress.log;

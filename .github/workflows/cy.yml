@@ -31,3 +31,12 @@ jobs:
 
       - name: Cypress run 🧪
         run: npm run test:stg
+
+      - name: Adding reports to GitHub pages
+        if: always()
+        uses: crazy-max/ghaction-github-pages@v3
+        with:
+          target_branch: gh-pages
+          build_dir: ./output/reports/html
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

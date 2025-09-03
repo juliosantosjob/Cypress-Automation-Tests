@@ -1,6 +1,6 @@
 /**
  * Comando para limpar o campo caso um parametro seja vazio
- * 
+ *
  * @param {string} selector
  * @param {string} text
  */
