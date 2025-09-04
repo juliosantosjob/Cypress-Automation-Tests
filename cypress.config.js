@@ -6,14 +6,9 @@ const { setupEnv } = require("./cypress/utils/enviroments");
 module.exports = defineConfig({
     reporter: "cypress-mochawesome-reporter",
     reporterOptions: {
-        reportDir: "output/reports",
-        charts: true,
-        overwrite: false,
-        html: true,
-        json: true,
+        reportDir: "cypress/reports",
         reportPageTitle: "Relatório de Testes",
-        embeddedScreenshots: true,
-        inlineAssets: true
+        embeddedScreenshots: true
     },
     e2e: {
         setupNodeEvents(on, config) {

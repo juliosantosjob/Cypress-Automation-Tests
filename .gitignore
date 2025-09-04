@@ -1,5 +1,5 @@
 cypress/downloads
 cypress/screenshots
-output
+cypress/reports
 node_modules
 .env

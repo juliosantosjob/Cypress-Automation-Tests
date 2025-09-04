@@ -7,8 +7,8 @@
   "description": "Projeto de automação de testes com Cypress",
   "scripts": {
     "lint": "npx eslint",
-    "report:merge": "npx mochawesome-merge output/reports/*.json > output/reports/report.json",
-    "report:generate": "npx marge output/reports/report.json --reportDir output/reports/html --inline",
+    "report:merge": "npx mochawesome-merge cypress/reports/*.json > cypress/reports/report.json",
+    "report:generate": "npx marge cypress/reports/report.json --reportDir cypress/reports/html --inline",
     "test:dev": "cross-env ENV=dev npx cypress run",
     "test:stg": "cross-env ENV=stg npx cypress run",
     "test:prd": "cross-env ENV=prd npx cypress run",
