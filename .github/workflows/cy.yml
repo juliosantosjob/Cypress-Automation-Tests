@@ -32,14 +32,11 @@ jobs:
       - name: Cypress run 🧪
         run: npm run test:stg
 
-      - name: Generate Mochawesome HTML report
-        run: npx marge output/reports/*.json -o output/reports/html
-
       - name: Adding reports to GitHub pages
         if: always()
         uses: crazy-max/ghaction-github-pages@v3
         with:
           target_branch: gh-pages
-          build_dir: ./output/reports/html
+          build_dir: ./cypress/reports/html
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
