@@ -42,5 +42,5 @@ jobs:
       - uses: actions/upload-artifact@v4
         with:
           name: my-artifact
-          path: ./cypress/reports/htmlpp
+          path: ./cypress/reports/html
           if-no-files-found: error
