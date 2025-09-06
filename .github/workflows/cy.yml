@@ -41,6 +41,6 @@ jobs:
 
       - uses: actions/upload-artifact@v4
         with:
-          name: my-artifact
+          namem reports-mochawesome
           path: ./cypress/reports/html
           if-no-files-found: error
